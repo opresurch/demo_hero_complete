@@ -21,7 +21,7 @@ namespace demo_hero_complete.Controllers
             Console.WriteLine("These changes are from master branch");
             if(heros == null)
             {
-                return NotFound("No Heros Found");
+                return NotFound("Not Found | No Heros found if there any at all");
             }
             return Ok(await _context.SuperHeroes.ToListAsync());
         }
