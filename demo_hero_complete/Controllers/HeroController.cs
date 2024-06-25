@@ -17,6 +17,8 @@ namespace demo_hero_complete.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllHeros()
         {
+            Console.WriteLine("THis is for testing purposes only");
+            Console.WriteLine("this changes from github web");
             var heros = await _context.SuperHeroes.ToListAsync();
             Console.WriteLine("These changes are from master branch");
             if(heros == null)
