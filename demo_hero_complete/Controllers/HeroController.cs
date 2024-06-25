@@ -17,6 +17,7 @@ namespace demo_hero_complete.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllHeros()
         {
+            Console.WriteLine("THis is for testing purposes only");
             var heros = await _context.SuperHeroes.ToListAsync();
             
             if(heros == null)
