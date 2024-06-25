@@ -18,7 +18,7 @@ namespace demo_hero_complete.Controllers
         public async Task<IActionResult> GetAllHeros()
         {
             var heros = await _context.SuperHeroes.ToListAsync();
-            
+            Console.WriteLine("This is a change from master branch");
             if(heros == null)
             {
                 return NotFound("No Heros Found");
